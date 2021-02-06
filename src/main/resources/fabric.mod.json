@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "morejewels",
+  "version": "1.0",
+
+  "name": "More Jewels",
+  "description": "This mod adds to Minecraft more jewels like ruby or sapphire",
+  "authors": [
+    "Visnaa"
+  ],
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/more-jewels-fabric",
+    "sources": "https://example.com"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.visnaa.morejewels.Main"
+    ]
+  },
+  "mixins": [
+    "morejewels.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  },
+  "suggests": {
+    "another-mod": ""
+  }
+}

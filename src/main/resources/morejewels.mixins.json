@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.visnaa.morejewels.mixins",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "OreGenMixin"
+  ],
+  "client": [
+  ],
+  "server": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
