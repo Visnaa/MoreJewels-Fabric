@@ -44,6 +44,9 @@ public enum ArmorMaterials implements ArmorMaterial
     }),
     PLATINUM("platinum", 40, new int[]{3, 6, 8, 3}, 14, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F, 0.0F, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{ModItems.PLATINUM});
+    }),
+    BERYLLIUM("beryllium", 40, new int[]{3, 6, 8, 3}, 14, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F, 0.0F, () -> {
+        return Ingredient.ofItems(new ItemConvertible[]{ModItems.BERYLLIUM});
     });
 
     private static final int[] BASE_DURABILITY = new int[]{13, 15, 16, 11};

@@ -47,6 +47,8 @@ public class ModItems
     public static final Item ROUGH_TOPAZ = new Item(new FabricItemSettings().group(Main.ITEM_GROUP));
     public static final Item PLATINUM = new Item(new FabricItemSettings().group(Main.ITEM_GROUP));
     public static final Item ROUGH_PLATINUM = new Item(new FabricItemSettings().group(Main.ITEM_GROUP));
+    public static final Item BERYLLIUM = new Item(new FabricItemSettings().group(Main.ITEM_GROUP));
+    public static final Item ROUGH_BERYLLIUM = new Item(new FabricItemSettings().group(Main.ITEM_GROUP));
 
     //Block Items
     public static final BlockItem RUBY_BLOCK = new BlockItem(ModBlocks.RUBY_BLOCK, new Item.Settings().group(Main.ITEM_GROUP));
@@ -70,6 +72,8 @@ public class ModItems
     public static final BlockItem TOPAZ_ORE = new BlockItem(ModBlocks.TOPAZ_ORE, new Item.Settings().group(Main.ITEM_GROUP));
     public static final BlockItem PLATINUM_BLOCK = new BlockItem(ModBlocks.PLATINUM_BLOCK, new Item.Settings().group(Main.ITEM_GROUP));
     public static final BlockItem PLATINUM_ORE = new BlockItem(ModBlocks.PLATINUM_ORE, new Item.Settings().group(Main.ITEM_GROUP));
+    public static final BlockItem BERYLLIUM_BLOCK = new BlockItem(ModBlocks.BERYLLIUM_BLOCK, new Item.Settings().group(Main.ITEM_GROUP));
+    public static final BlockItem BERYLLIUM_ORE = new BlockItem(ModBlocks.BERYLLIUM_ORE, new Item.Settings().group(Main.ITEM_GROUP));
 
     //Tools
     public static final SwordItem RUBY_SWORD = new SwordItem(ToolMaterials.RUBY, SWORD_DAMAGE, SWORD_SPEED, new Item.Settings().group(ItemGroup.COMBAT));
@@ -132,6 +136,12 @@ public class ModItems
     public static final AxeItem PLATINUM_AXE = new AxeItem(ToolMaterials.PLATINUM, AXE_DAMAGE, AXE_SPEED, new Item.Settings().group(ItemGroup.TOOLS));
     public static final HoeItem PLATINUM_HOE = new HoeItem(ToolMaterials.PLATINUM, HOE_DAMAGE, HOE_SPEED, new Item.Settings().group(ItemGroup.TOOLS));
 
+    public static final SwordItem BERYLLIUM_SWORD = new SwordItem(ToolMaterials.BERYLLIUM, SWORD_DAMAGE, SWORD_SPEED, new Item.Settings().group(ItemGroup.COMBAT));
+    public static final ShovelItem BERYLLIUM_SHOVEL = new ShovelItem(ToolMaterials.BERYLLIUM, SHOVEL_DAMAGE, SHOVEL_SPEED, new Item.Settings().group(ItemGroup.TOOLS));
+    public static final PickaxeItem BERYLLIUM_PICKAXE = new PickaxeItem(ToolMaterials.BERYLLIUM, PICKAXE_DAMAGE, PICKAXE_SPEED, new Item.Settings().group(ItemGroup.TOOLS));
+    public static final AxeItem BERYLLIUM_AXE = new AxeItem(ToolMaterials.BERYLLIUM, AXE_DAMAGE, AXE_SPEED, new Item.Settings().group(ItemGroup.TOOLS));
+    public static final HoeItem BERYLLIUM_HOE = new HoeItem(ToolMaterials.BERYLLIUM, HOE_DAMAGE, HOE_SPEED, new Item.Settings().group(ItemGroup.TOOLS));
+
     //Armor
     public static final ArmorItem RUBY_HELMET = new ArmorItem(ArmorMaterials.RUBY, EquipmentSlot.HEAD, new Item.Settings().group(ItemGroup.COMBAT));
     public static final ArmorItem RUBY_CHESTPLATE = new ArmorItem(ArmorMaterials.RUBY, EquipmentSlot.CHEST, new Item.Settings().group(ItemGroup.COMBAT));
@@ -183,6 +193,11 @@ public class ModItems
     public static final ArmorItem PLATINUM_LEGGINGS = new ArmorItem(ArmorMaterials.PLATINUM, EquipmentSlot.LEGS, new Item.Settings().group(ItemGroup.COMBAT));
     public static final ArmorItem PLATINUM_BOOTS = new ArmorItem(ArmorMaterials.PLATINUM, EquipmentSlot.FEET, new Item.Settings().group(ItemGroup.COMBAT));
 
+    public static final ArmorItem BERYLLIUM_HELMET = new ArmorItem(ArmorMaterials.BERYLLIUM, EquipmentSlot.HEAD, new Item.Settings().group(ItemGroup.COMBAT));
+    public static final ArmorItem BERYLLIUM_CHESTPLATE = new ArmorItem(ArmorMaterials.BERYLLIUM, EquipmentSlot.CHEST, new Item.Settings().group(ItemGroup.COMBAT));
+    public static final ArmorItem BERYLLIUM_LEGGINGS = new ArmorItem(ArmorMaterials.BERYLLIUM, EquipmentSlot.LEGS, new Item.Settings().group(ItemGroup.COMBAT));
+    public static final ArmorItem BERYLLIUM_BOOTS = new ArmorItem(ArmorMaterials.BERYLLIUM, EquipmentSlot.FEET, new Item.Settings().group(ItemGroup.COMBAT));
+
     public static void registerItems()
     {
         //Items
@@ -206,6 +221,8 @@ public class ModItems
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "rough_topaz"), ROUGH_TOPAZ);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "platinum"), PLATINUM);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "rough_platinum"), ROUGH_PLATINUM);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "beryllium"), BERYLLIUM);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "rough_beryllium"), ROUGH_BERYLLIUM);
 
         //Tools
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "ruby_sword"), RUBY_SWORD);
@@ -268,6 +285,12 @@ public class ModItems
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "platinum_axe"), PLATINUM_AXE);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "platinum_hoe"), PLATINUM_HOE);
 
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "beryllium_sword"), BERYLLIUM_SWORD);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "beryllium_shovel"), BERYLLIUM_SHOVEL);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "beryllium_pickaxe"), BERYLLIUM_PICKAXE);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "beryllium_axe"), BERYLLIUM_AXE);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "beryllium_hoe"), BERYLLIUM_HOE);
+
         //Armor
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "ruby_helmet"), RUBY_HELMET);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "ruby_chestplate"), RUBY_CHESTPLATE);
@@ -318,6 +341,11 @@ public class ModItems
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "platinum_chestplate"), PLATINUM_CHESTPLATE);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "platinum_leggings"), PLATINUM_LEGGINGS);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "platinum_boots"), PLATINUM_BOOTS);
+
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "beryllium_helmet"), BERYLLIUM_HELMET);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "beryllium_chestplate"), BERYLLIUM_CHESTPLATE);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "beryllium_leggings"), BERYLLIUM_LEGGINGS);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "beryllium_boots"), BERYLLIUM_BOOTS);
         
         //Block Items
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "ruby_block"), RUBY_BLOCK);
@@ -341,5 +369,7 @@ public class ModItems
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "topaz_ore"), TOPAZ_ORE);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "platinum_block"), PLATINUM_BLOCK);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "platinum_ore"), PLATINUM_ORE);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "beryllium_block"), BERYLLIUM_BLOCK);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "beryllium_ore"), BERYLLIUM_ORE);
     }
 }

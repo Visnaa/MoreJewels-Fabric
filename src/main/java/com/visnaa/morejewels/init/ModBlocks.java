@@ -30,6 +30,8 @@ public class ModBlocks
     public static final Block TOPAZ_ORE = new Block(FabricBlockSettings.of(Material.STONE).strength(3.0F, 3.0F));
     public static final Block PLATINUM_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).strength(5.0F, 6.0F));
     public static final Block PLATINUM_ORE = new Block(FabricBlockSettings.of(Material.STONE).strength(3.0F, 3.0F));
+    public static final Block BERYLLIUM_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).strength(5.0F, 6.0F));
+    public static final Block BERYLLIUM_ORE = new Block(FabricBlockSettings.of(Material.STONE).strength(3.0F, 3.0F));
 
     public static void registerBlocks()
     {
@@ -54,5 +56,7 @@ public class ModBlocks
         Registry.register(Registry.BLOCK, new Identifier(Main.MOD_ID, "topaz_ore"), TOPAZ_ORE);
         Registry.register(Registry.BLOCK, new Identifier(Main.MOD_ID, "platinum_block"), PLATINUM_BLOCK);
         Registry.register(Registry.BLOCK, new Identifier(Main.MOD_ID, "platinum_ore"), PLATINUM_ORE);
+        Registry.register(Registry.BLOCK, new Identifier(Main.MOD_ID, "beryllium_block"), BERYLLIUM_BLOCK);
+        Registry.register(Registry.BLOCK, new Identifier(Main.MOD_ID, "beryllium_ore"), BERYLLIUM_ORE);
     }
 }

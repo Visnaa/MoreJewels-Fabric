@@ -39,6 +39,9 @@ public enum ToolMaterials implements ToolMaterial
     }),
     PLATINUM(3, 2048, 9.0F, 3.0F, 14, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{ModItems.PLATINUM});
+    }),
+    BERYLLIUM(3, 2048, 9.0F, 3.0F, 14, () -> {
+        return Ingredient.ofItems(new ItemConvertible[]{ModItems.BERYLLIUM});
     });
 
     private final int miningLevel;
