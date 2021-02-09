@@ -21,7 +21,7 @@ public class Main implements ModInitializer
 	public static final String MOD_ID = "morejewels";
 
 	public static final ItemGroup ITEM_GROUP = FabricItemGroupBuilder.build(
-			new Identifier(MOD_ID, "item_group"),
+			new Identifier(MOD_ID, "morejewels_tab"),
 			() -> new ItemStack(ModItems.RUBY));
 
 
