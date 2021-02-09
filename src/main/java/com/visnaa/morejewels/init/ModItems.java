@@ -49,6 +49,8 @@ public class ModItems
     public static final Item ROUGH_PLATINUM = new Item(new FabricItemSettings().group(Main.ITEM_GROUP));
     public static final Item BERYLLIUM = new Item(new FabricItemSettings().group(Main.ITEM_GROUP));
     public static final Item ROUGH_BERYLLIUM = new Item(new FabricItemSettings().group(Main.ITEM_GROUP));
+    public static final Item BIXBIT = new Item(new FabricItemSettings().group(Main.ITEM_GROUP));
+    public static final Item ROUGH_BIXBIT = new Item(new FabricItemSettings().group(Main.ITEM_GROUP));
 
     //Block Items
     public static final BlockItem RUBY_BLOCK = new BlockItem(ModBlocks.RUBY_BLOCK, new Item.Settings().group(Main.ITEM_GROUP));
@@ -74,6 +76,8 @@ public class ModItems
     public static final BlockItem PLATINUM_ORE = new BlockItem(ModBlocks.PLATINUM_ORE, new Item.Settings().group(Main.ITEM_GROUP));
     public static final BlockItem BERYLLIUM_BLOCK = new BlockItem(ModBlocks.BERYLLIUM_BLOCK, new Item.Settings().group(Main.ITEM_GROUP));
     public static final BlockItem BERYLLIUM_ORE = new BlockItem(ModBlocks.BERYLLIUM_ORE, new Item.Settings().group(Main.ITEM_GROUP));
+    public static final BlockItem BIXBIT_BLOCK = new BlockItem(ModBlocks.BIXBIT_BLOCK, new Item.Settings().group(Main.ITEM_GROUP));
+    public static final BlockItem BIXBIT_ORE = new BlockItem(ModBlocks.BIXBIT_ORE, new Item.Settings().group(Main.ITEM_GROUP));
 
     //Tools
     public static final SwordItem RUBY_SWORD = new SwordItem(ToolMaterials.RUBY, SWORD_DAMAGE, SWORD_SPEED, new Item.Settings().group(ItemGroup.COMBAT));
@@ -142,6 +146,12 @@ public class ModItems
     public static final AxeItem BERYLLIUM_AXE = new AxeItem(ToolMaterials.BERYLLIUM, AXE_DAMAGE, AXE_SPEED, new Item.Settings().group(ItemGroup.TOOLS));
     public static final HoeItem BERYLLIUM_HOE = new HoeItem(ToolMaterials.BERYLLIUM, HOE_DAMAGE, HOE_SPEED, new Item.Settings().group(ItemGroup.TOOLS));
 
+    public static final SwordItem BIXBIT_SWORD = new SwordItem(ToolMaterials.BIXBIT, SWORD_DAMAGE, SWORD_SPEED, new Item.Settings().group(ItemGroup.COMBAT));
+    public static final ShovelItem BIXBIT_SHOVEL = new ShovelItem(ToolMaterials.BIXBIT, SHOVEL_DAMAGE, SHOVEL_SPEED, new Item.Settings().group(ItemGroup.TOOLS));
+    public static final PickaxeItem BIXBIT_PICKAXE = new PickaxeItem(ToolMaterials.BIXBIT, PICKAXE_DAMAGE, PICKAXE_SPEED, new Item.Settings().group(ItemGroup.TOOLS));
+    public static final AxeItem BIXBIT_AXE = new AxeItem(ToolMaterials.BIXBIT, AXE_DAMAGE, AXE_SPEED, new Item.Settings().group(ItemGroup.TOOLS));
+    public static final HoeItem BIXBIT_HOE = new HoeItem(ToolMaterials.BIXBIT, HOE_DAMAGE, HOE_SPEED, new Item.Settings().group(ItemGroup.TOOLS));
+
     //Armor
     public static final ArmorItem RUBY_HELMET = new ArmorItem(ArmorMaterials.RUBY, EquipmentSlot.HEAD, new Item.Settings().group(ItemGroup.COMBAT));
     public static final ArmorItem RUBY_CHESTPLATE = new ArmorItem(ArmorMaterials.RUBY, EquipmentSlot.CHEST, new Item.Settings().group(ItemGroup.COMBAT));
@@ -198,6 +208,11 @@ public class ModItems
     public static final ArmorItem BERYLLIUM_LEGGINGS = new ArmorItem(ArmorMaterials.BERYLLIUM, EquipmentSlot.LEGS, new Item.Settings().group(ItemGroup.COMBAT));
     public static final ArmorItem BERYLLIUM_BOOTS = new ArmorItem(ArmorMaterials.BERYLLIUM, EquipmentSlot.FEET, new Item.Settings().group(ItemGroup.COMBAT));
 
+    public static final ArmorItem BIXBIT_HELMET = new ArmorItem(ArmorMaterials.BIXBIT, EquipmentSlot.HEAD, new Item.Settings().group(ItemGroup.COMBAT));
+    public static final ArmorItem BIXBIT_CHESTPLATE = new ArmorItem(ArmorMaterials.BIXBIT, EquipmentSlot.CHEST, new Item.Settings().group(ItemGroup.COMBAT));
+    public static final ArmorItem BIXBIT_LEGGINGS = new ArmorItem(ArmorMaterials.BIXBIT, EquipmentSlot.LEGS, new Item.Settings().group(ItemGroup.COMBAT));
+    public static final ArmorItem BIXBIT_BOOTS = new ArmorItem(ArmorMaterials.BIXBIT, EquipmentSlot.FEET, new Item.Settings().group(ItemGroup.COMBAT));
+
     public static void registerItems()
     {
         //Items
@@ -223,6 +238,8 @@ public class ModItems
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "rough_platinum"), ROUGH_PLATINUM);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "beryllium"), BERYLLIUM);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "rough_beryllium"), ROUGH_BERYLLIUM);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "bixbit"), BIXBIT);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "rough_bixbit"), ROUGH_BIXBIT);
 
         //Tools
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "ruby_sword"), RUBY_SWORD);
@@ -291,6 +308,12 @@ public class ModItems
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "beryllium_axe"), BERYLLIUM_AXE);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "beryllium_hoe"), BERYLLIUM_HOE);
 
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "bixbit_sword"), BIXBIT_SWORD);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "bixbit_shovel"), BIXBIT_SHOVEL);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "bixbit_pickaxe"), BIXBIT_PICKAXE);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "bixbit_axe"), BIXBIT_AXE);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "bixbit_hoe"), BIXBIT_HOE);
+
         //Armor
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "ruby_helmet"), RUBY_HELMET);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "ruby_chestplate"), RUBY_CHESTPLATE);
@@ -346,6 +369,11 @@ public class ModItems
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "beryllium_chestplate"), BERYLLIUM_CHESTPLATE);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "beryllium_leggings"), BERYLLIUM_LEGGINGS);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "beryllium_boots"), BERYLLIUM_BOOTS);
+
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "bixbit_helmet"), BIXBIT_HELMET);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "bixbit_chestplate"), BIXBIT_CHESTPLATE);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "bixbit_leggings"), BIXBIT_LEGGINGS);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "bixbit_boots"), BIXBIT_BOOTS);
         
         //Block Items
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "ruby_block"), RUBY_BLOCK);
@@ -371,5 +399,7 @@ public class ModItems
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "platinum_ore"), PLATINUM_ORE);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "beryllium_block"), BERYLLIUM_BLOCK);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "beryllium_ore"), BERYLLIUM_ORE);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "bixbit_block"), BIXBIT_BLOCK);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "bixbit_ore"), BIXBIT_ORE);
     }
 }

@@ -144,6 +144,18 @@ public class OreGenOverworld
             .spreadHorizontally()
             .repeat(20); // number of veins per chunk
 
+    public static ConfiguredFeature<?, ?> BIXBIT_ORE_GEN = Feature.ORE
+            .configure(new OreFeatureConfig(
+                    OreFeatureConfig.Rules.BASE_STONE_OVERWORLD,
+                    ModBlocks.BIXBIT_ORE.getDefaultState(),
+                    9)) // vein size
+            .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(
+                    0, // bottom offset
+                    0, // min y level
+                    64))) // max y level
+            .spreadHorizontally()
+            .repeat(20); // number of veins per chunk
+
     public static void registerOres()
     {
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier("morejewels", "ore_ruby_gen"), RUBY_ORE_GEN);
@@ -157,5 +169,6 @@ public class OreGenOverworld
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier("morejewels", "ore_topaz_gen"), TOPAZ_ORE_GEN);
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier("morejewels", "ore_platinum_gen"), PLATINUM_ORE_GEN);
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier("morejewels", "ore_beryllium_gen"), BERYLLIUM_ORE_GEN);
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier("morejewels", "ore_bixbit_gen"), BIXBIT_ORE_GEN);
     }
 }

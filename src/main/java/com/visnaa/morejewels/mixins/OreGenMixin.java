@@ -25,5 +25,6 @@ public class OreGenMixin
         builder.feature(GenerationStep.Feature.UNDERGROUND_ORES, OreGenOverworld.TOPAZ_ORE_GEN);
         builder.feature(GenerationStep.Feature.UNDERGROUND_ORES, OreGenOverworld.PLATINUM_ORE_GEN);
         builder.feature(GenerationStep.Feature.UNDERGROUND_ORES, OreGenOverworld.BERYLLIUM_ORE_GEN);
+        builder.feature(GenerationStep.Feature.UNDERGROUND_ORES, OreGenOverworld.BIXBIT_ORE_GEN);
     }
 }
