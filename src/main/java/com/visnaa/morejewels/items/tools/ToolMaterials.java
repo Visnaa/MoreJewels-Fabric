@@ -45,6 +45,9 @@ public enum ToolMaterials implements ToolMaterial
     }),
     BIXBIT(3, 2048, 9.0F, 3.0F, 14, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{ModItems.BIXBIT});
+    }),
+    MALACHITE(3, 2048, 9.0F, 3.0F, 14, () -> {
+        return Ingredient.ofItems(new ItemConvertible[]{ModItems.MALACHITE});
     });
 
     private final int miningLevel;
