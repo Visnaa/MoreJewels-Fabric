@@ -19,7 +19,6 @@ public class ModBlocks
     public static final Block JADE_ORE = new Block(FabricBlockSettings.of(Material.STONE).strength(3.0F, 3.0F));
     public static final Block OPAL_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).strength(5.0F, 6.0F));
     public static final Block OPAL_ORE = new Block(FabricBlockSettings.of(Material.STONE).strength(3.0F, 3.0F));
-    public static final Block POLISHED_OPAL_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).strength(5.0F, 6.0F));
     public static final Block YELLOW_DIAMOND_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).strength(5.0F, 6.0F));
     public static final Block YELLOW_DIAMOND_ORE = new Block(FabricBlockSettings.of(Material.STONE).strength(3.0F, 3.0F));
     public static final Block AMBER_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).strength(5.0F, 6.0F));
@@ -36,6 +35,8 @@ public class ModBlocks
     public static final Block BIXBIT_ORE = new Block(FabricBlockSettings.of(Material.STONE).strength(3.0F, 3.0F));
     public static final Block MALACHITE_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).strength(5.0F, 6.0F));
     public static final Block MALACHITE_ORE = new Block(FabricBlockSettings.of(Material.STONE).strength(3.0F, 3.0F));
+    public static final Block ONYX_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).strength(5.0F, 6.0F));
+    public static final Block ONYX_ORE = new Block(FabricBlockSettings.of(Material.STONE).strength(3.0F, 3.0F));
 
 
     public static void registerBlocks()
@@ -50,7 +51,6 @@ public class ModBlocks
         Registry.register(Registry.BLOCK, new Identifier(Main.MOD_ID, "jade_ore"), JADE_ORE);
         Registry.register(Registry.BLOCK, new Identifier(Main.MOD_ID, "opal_block"), OPAL_BLOCK);
         Registry.register(Registry.BLOCK, new Identifier(Main.MOD_ID, "opal_ore"), OPAL_ORE);
-        Registry.register(Registry.BLOCK, new Identifier(Main.MOD_ID, "polished_opal_block"), POLISHED_OPAL_BLOCK);
         Registry.register(Registry.BLOCK, new Identifier(Main.MOD_ID, "yellow_diamond_block"), YELLOW_DIAMOND_BLOCK);
         Registry.register(Registry.BLOCK, new Identifier(Main.MOD_ID, "yellow_diamond_ore"), YELLOW_DIAMOND_ORE);
         Registry.register(Registry.BLOCK, new Identifier(Main.MOD_ID, "amber_block"), AMBER_BLOCK);
@@ -67,5 +67,7 @@ public class ModBlocks
         Registry.register(Registry.BLOCK, new Identifier(Main.MOD_ID, "bixbit_ore"), BIXBIT_ORE);
         Registry.register(Registry.BLOCK, new Identifier(Main.MOD_ID, "malachite_block"), MALACHITE_BLOCK);
         Registry.register(Registry.BLOCK, new Identifier(Main.MOD_ID, "malachite_ore"), MALACHITE_ORE);
+        Registry.register(Registry.BLOCK, new Identifier(Main.MOD_ID, "onyx_block"), ONYX_BLOCK);
+        Registry.register(Registry.BLOCK, new Identifier(Main.MOD_ID, "onyx_ore"), ONYX_ORE);
     }
 }

@@ -53,6 +53,8 @@ public class ModItems
     public static final Item ROUGH_BIXBIT = new Item(new FabricItemSettings().group(Main.ITEM_GROUP));
     public static final Item MALACHITE = new Item(new FabricItemSettings().group(Main.ITEM_GROUP));
     public static final Item ROUGH_MALACHITE = new Item(new FabricItemSettings().group(Main.ITEM_GROUP));
+    public static final Item ONYX = new Item(new FabricItemSettings().group(Main.ITEM_GROUP));
+    public static final Item ROUGH_ONYX = new Item(new FabricItemSettings().group(Main.ITEM_GROUP));
 
     //Block Items
     public static final BlockItem RUBY_BLOCK = new BlockItem(ModBlocks.RUBY_BLOCK, new Item.Settings().group(Main.ITEM_GROUP));
@@ -65,7 +67,6 @@ public class ModItems
     public static final BlockItem JADE_ORE = new BlockItem(ModBlocks.JADE_ORE, new Item.Settings().group(Main.ITEM_GROUP));
     public static final BlockItem OPAL_BLOCK = new BlockItem(ModBlocks.OPAL_BLOCK, new Item.Settings().group(Main.ITEM_GROUP));
     public static final BlockItem OPAL_ORE = new BlockItem(ModBlocks.OPAL_ORE, new Item.Settings().group(Main.ITEM_GROUP));
-    public static final BlockItem POLISHED_OPAL_BLOCK = new BlockItem(ModBlocks.POLISHED_OPAL_BLOCK, new Item.Settings().group(Main.ITEM_GROUP));
     public static final BlockItem YELLOW_DIAMOND_BLOCK = new BlockItem(ModBlocks.YELLOW_DIAMOND_BLOCK, new Item.Settings().group(Main.ITEM_GROUP));
     public static final BlockItem YELLOW_DIAMOND_ORE = new BlockItem(ModBlocks.YELLOW_DIAMOND_ORE, new Item.Settings().group(Main.ITEM_GROUP));
     public static final BlockItem AMBER_BLOCK = new BlockItem(ModBlocks.AMBER_BLOCK, new Item.Settings().group(Main.ITEM_GROUP));
@@ -82,6 +83,8 @@ public class ModItems
     public static final BlockItem BIXBIT_ORE = new BlockItem(ModBlocks.BIXBIT_ORE, new Item.Settings().group(Main.ITEM_GROUP));
     public static final BlockItem MALACHITE_BLOCK = new BlockItem(ModBlocks.MALACHITE_BLOCK, new Item.Settings().group(Main.ITEM_GROUP));
     public static final BlockItem MALACHITE_ORE = new BlockItem(ModBlocks.MALACHITE_ORE, new Item.Settings().group(Main.ITEM_GROUP));
+    public static final BlockItem ONYX_BLOCK = new BlockItem(ModBlocks.ONYX_BLOCK, new Item.Settings().group(Main.ITEM_GROUP));
+    public static final BlockItem ONYX_ORE = new BlockItem(ModBlocks.ONYX_ORE, new Item.Settings().group(Main.ITEM_GROUP));
 
     //Tools
     public static final SwordItem RUBY_SWORD = new SwordItem(ToolMaterials.RUBY, SWORD_DAMAGE, SWORD_SPEED, new Item.Settings().group(ItemGroup.COMBAT));
@@ -162,6 +165,12 @@ public class ModItems
     public static final AxeItem MALACHITE_AXE = new AxeItem(ToolMaterials.MALACHITE, AXE_DAMAGE, AXE_SPEED, new Item.Settings().group(ItemGroup.TOOLS));
     public static final HoeItem MALACHITE_HOE = new HoeItem(ToolMaterials.MALACHITE, HOE_DAMAGE, HOE_SPEED, new Item.Settings().group(ItemGroup.TOOLS));
 
+    public static final SwordItem ONYX_SWORD = new SwordItem(ToolMaterials.ONYX, SWORD_DAMAGE, SWORD_SPEED, new Item.Settings().group(ItemGroup.COMBAT));
+    public static final ShovelItem ONYX_SHOVEL = new ShovelItem(ToolMaterials.ONYX, SHOVEL_DAMAGE, SHOVEL_SPEED, new Item.Settings().group(ItemGroup.TOOLS));
+    public static final PickaxeItem ONYX_PICKAXE = new PickaxeItem(ToolMaterials.ONYX, PICKAXE_DAMAGE, PICKAXE_SPEED, new Item.Settings().group(ItemGroup.TOOLS));
+    public static final AxeItem ONYX_AXE = new AxeItem(ToolMaterials.ONYX, AXE_DAMAGE, AXE_SPEED, new Item.Settings().group(ItemGroup.TOOLS));
+    public static final HoeItem ONYX_HOE = new HoeItem(ToolMaterials.ONYX, HOE_DAMAGE, HOE_SPEED, new Item.Settings().group(ItemGroup.TOOLS));
+
     //Armor
     public static final ArmorItem RUBY_HELMET = new ArmorItem(ArmorMaterials.RUBY, EquipmentSlot.HEAD, new Item.Settings().group(ItemGroup.COMBAT));
     public static final ArmorItem RUBY_CHESTPLATE = new ArmorItem(ArmorMaterials.RUBY, EquipmentSlot.CHEST, new Item.Settings().group(ItemGroup.COMBAT));
@@ -228,6 +237,11 @@ public class ModItems
     public static final ArmorItem MALACHITE_LEGGINGS = new ArmorItem(ArmorMaterials.MALACHITE, EquipmentSlot.LEGS, new Item.Settings().group(ItemGroup.COMBAT));
     public static final ArmorItem MALACHITE_BOOTS = new ArmorItem(ArmorMaterials.MALACHITE, EquipmentSlot.FEET, new Item.Settings().group(ItemGroup.COMBAT));
 
+    public static final ArmorItem ONYX_HELMET = new ArmorItem(ArmorMaterials.ONYX, EquipmentSlot.HEAD, new Item.Settings().group(ItemGroup.COMBAT));
+    public static final ArmorItem ONYX_CHESTPLATE = new ArmorItem(ArmorMaterials.ONYX, EquipmentSlot.CHEST, new Item.Settings().group(ItemGroup.COMBAT));
+    public static final ArmorItem ONYX_LEGGINGS = new ArmorItem(ArmorMaterials.ONYX, EquipmentSlot.LEGS, new Item.Settings().group(ItemGroup.COMBAT));
+    public static final ArmorItem ONYX_BOOTS = new ArmorItem(ArmorMaterials.ONYX, EquipmentSlot.FEET, new Item.Settings().group(ItemGroup.COMBAT));
+
     public static void registerItems()
     {
         //Items
@@ -257,6 +271,8 @@ public class ModItems
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "rough_bixbit"), ROUGH_BIXBIT);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "malachite"), MALACHITE);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "rough_malachite"), ROUGH_MALACHITE);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "onyx"), ONYX);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "rough_onyx"), ROUGH_ONYX);
 
         //Tools
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "ruby_sword"), RUBY_SWORD);
@@ -337,6 +353,12 @@ public class ModItems
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "malachite_axe"), MALACHITE_AXE);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "malachite_hoe"), MALACHITE_HOE);
 
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "onyx_sword"), ONYX_SWORD);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "onyx_shovel"), ONYX_SHOVEL);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "onyx_pickaxe"), ONYX_PICKAXE);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "onyx_axe"), ONYX_AXE);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "onyx_hoe"), ONYX_HOE);
+
         //Armor
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "ruby_helmet"), RUBY_HELMET);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "ruby_chestplate"), RUBY_CHESTPLATE);
@@ -402,6 +424,11 @@ public class ModItems
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "malachite_chestplate"), MALACHITE_CHESTPLATE);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "malachite_leggings"), MALACHITE_LEGGINGS);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "malachite_boots"), MALACHITE_BOOTS);
+
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "onyx_helmet"), ONYX_HELMET);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "onyx_chestplate"), ONYX_CHESTPLATE);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "onyx_leggings"), ONYX_LEGGINGS);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "onyx_boots"), ONYX_BOOTS);
         
         //Block Items
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "ruby_block"), RUBY_BLOCK);
@@ -414,7 +441,6 @@ public class ModItems
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "jade_ore"), JADE_ORE);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "opal_block"), OPAL_BLOCK);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "opal_ore"), OPAL_ORE);
-        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "polished_opal_block"), POLISHED_OPAL_BLOCK);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "yellow_diamond_block"), YELLOW_DIAMOND_BLOCK);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "yellow_diamond_ore"), YELLOW_DIAMOND_ORE);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "amber_block"), AMBER_BLOCK);
@@ -431,5 +457,7 @@ public class ModItems
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "bixbit_ore"), BIXBIT_ORE);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "malachite_block"), MALACHITE_BLOCK);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "malachite_ore"), MALACHITE_ORE);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "onyx_block"), ONYX_BLOCK);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "onyx_ore"), ONYX_ORE);
     }
 }
