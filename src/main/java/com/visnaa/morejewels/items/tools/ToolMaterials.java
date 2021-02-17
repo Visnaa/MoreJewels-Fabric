@@ -51,6 +51,9 @@ public enum ToolMaterials implements ToolMaterial
     }),
     ONYX(3, 2048, 9.0F, 3.0F, 14, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{ModItems.ONYX});
+    }),
+    PERIDOT(3, 2048, 9.0F, 3.0F, 14, () -> {
+        return Ingredient.ofItems(new ItemConvertible[]{ModItems.PERIDOT});
     });
 
     private final int miningLevel;

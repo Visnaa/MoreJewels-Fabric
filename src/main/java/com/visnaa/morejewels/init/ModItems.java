@@ -55,6 +55,8 @@ public class ModItems
     public static final Item ROUGH_MALACHITE = new Item(new FabricItemSettings().group(Main.ITEM_GROUP));
     public static final Item ONYX = new Item(new FabricItemSettings().group(Main.ITEM_GROUP));
     public static final Item ROUGH_ONYX = new Item(new FabricItemSettings().group(Main.ITEM_GROUP));
+    public static final Item PERIDOT = new Item(new FabricItemSettings().group(Main.ITEM_GROUP));
+    public static final Item ROUGH_PERIDOT = new Item(new FabricItemSettings().group(Main.ITEM_GROUP));
 
     //Block Items
     public static final BlockItem RUBY_BLOCK = new BlockItem(ModBlocks.RUBY_BLOCK, new Item.Settings().group(Main.ITEM_GROUP));
@@ -85,6 +87,8 @@ public class ModItems
     public static final BlockItem MALACHITE_ORE = new BlockItem(ModBlocks.MALACHITE_ORE, new Item.Settings().group(Main.ITEM_GROUP));
     public static final BlockItem ONYX_BLOCK = new BlockItem(ModBlocks.ONYX_BLOCK, new Item.Settings().group(Main.ITEM_GROUP));
     public static final BlockItem ONYX_ORE = new BlockItem(ModBlocks.ONYX_ORE, new Item.Settings().group(Main.ITEM_GROUP));
+    public static final BlockItem PERIDOT_BLOCK = new BlockItem(ModBlocks.PERIDOT_BLOCK, new Item.Settings().group(Main.ITEM_GROUP));
+    public static final BlockItem PERIDOT_ORE = new BlockItem(ModBlocks.PERIDOT_ORE, new Item.Settings().group(Main.ITEM_GROUP));
 
     //Tools
     public static final SwordItem RUBY_SWORD = new SwordItem(ToolMaterials.RUBY, SWORD_DAMAGE, SWORD_SPEED, new Item.Settings().group(ItemGroup.COMBAT));
@@ -171,6 +175,12 @@ public class ModItems
     public static final AxeItem ONYX_AXE = new AxeItem(ToolMaterials.ONYX, AXE_DAMAGE, AXE_SPEED, new Item.Settings().group(ItemGroup.TOOLS));
     public static final HoeItem ONYX_HOE = new HoeItem(ToolMaterials.ONYX, HOE_DAMAGE, HOE_SPEED, new Item.Settings().group(ItemGroup.TOOLS));
 
+    public static final SwordItem PERIDOT_SWORD = new SwordItem(ToolMaterials.PERIDOT, SWORD_DAMAGE, SWORD_SPEED, new Item.Settings().group(ItemGroup.COMBAT));
+    public static final ShovelItem PERIDOT_SHOVEL = new ShovelItem(ToolMaterials.PERIDOT, SHOVEL_DAMAGE, SHOVEL_SPEED, new Item.Settings().group(ItemGroup.TOOLS));
+    public static final PickaxeItem PERIDOT_PICKAXE = new PickaxeItem(ToolMaterials.PERIDOT, PICKAXE_DAMAGE, PICKAXE_SPEED, new Item.Settings().group(ItemGroup.TOOLS));
+    public static final AxeItem PERIDOT_AXE = new AxeItem(ToolMaterials.PERIDOT, AXE_DAMAGE, AXE_SPEED, new Item.Settings().group(ItemGroup.TOOLS));
+    public static final HoeItem PERIDOT_HOE = new HoeItem(ToolMaterials.PERIDOT, HOE_DAMAGE, HOE_SPEED, new Item.Settings().group(ItemGroup.TOOLS));
+
     //Armor
     public static final ArmorItem RUBY_HELMET = new ArmorItem(ArmorMaterials.RUBY, EquipmentSlot.HEAD, new Item.Settings().group(ItemGroup.COMBAT));
     public static final ArmorItem RUBY_CHESTPLATE = new ArmorItem(ArmorMaterials.RUBY, EquipmentSlot.CHEST, new Item.Settings().group(ItemGroup.COMBAT));
@@ -242,6 +252,11 @@ public class ModItems
     public static final ArmorItem ONYX_LEGGINGS = new ArmorItem(ArmorMaterials.ONYX, EquipmentSlot.LEGS, new Item.Settings().group(ItemGroup.COMBAT));
     public static final ArmorItem ONYX_BOOTS = new ArmorItem(ArmorMaterials.ONYX, EquipmentSlot.FEET, new Item.Settings().group(ItemGroup.COMBAT));
 
+    public static final ArmorItem PERIDOT_HELMET = new ArmorItem(ArmorMaterials.PERIDOT, EquipmentSlot.HEAD, new Item.Settings().group(ItemGroup.COMBAT));
+    public static final ArmorItem PERIDOT_CHESTPLATE = new ArmorItem(ArmorMaterials.PERIDOT, EquipmentSlot.CHEST, new Item.Settings().group(ItemGroup.COMBAT));
+    public static final ArmorItem PERIDOT_LEGGINGS = new ArmorItem(ArmorMaterials.PERIDOT, EquipmentSlot.LEGS, new Item.Settings().group(ItemGroup.COMBAT));
+    public static final ArmorItem PERIDOT_BOOTS = new ArmorItem(ArmorMaterials.PERIDOT, EquipmentSlot.FEET, new Item.Settings().group(ItemGroup.COMBAT));
+
     public static void registerItems()
     {
         //Items
@@ -273,6 +288,8 @@ public class ModItems
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "rough_malachite"), ROUGH_MALACHITE);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "onyx"), ONYX);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "rough_onyx"), ROUGH_ONYX);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "peridot"), PERIDOT);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "rough_peridot"), ROUGH_PERIDOT);
 
         //Tools
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "ruby_sword"), RUBY_SWORD);
@@ -359,6 +376,12 @@ public class ModItems
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "onyx_axe"), ONYX_AXE);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "onyx_hoe"), ONYX_HOE);
 
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "peridot_sword"), PERIDOT_SWORD);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "peridot_shovel"), PERIDOT_SHOVEL);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "peridot_pickaxe"), PERIDOT_PICKAXE);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "peridot_axe"), PERIDOT_AXE);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "peridot_hoe"), PERIDOT_HOE);
+
         //Armor
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "ruby_helmet"), RUBY_HELMET);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "ruby_chestplate"), RUBY_CHESTPLATE);
@@ -429,6 +452,11 @@ public class ModItems
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "onyx_chestplate"), ONYX_CHESTPLATE);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "onyx_leggings"), ONYX_LEGGINGS);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "onyx_boots"), ONYX_BOOTS);
+
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "peridot_helmet"), PERIDOT_HELMET);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "peridot_chestplate"), PERIDOT_CHESTPLATE);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "peridot_leggings"), PERIDOT_LEGGINGS);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "peridot_boots"), PERIDOT_BOOTS);
         
         //Block Items
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "ruby_block"), RUBY_BLOCK);
@@ -459,5 +487,7 @@ public class ModItems
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "malachite_ore"), MALACHITE_ORE);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "onyx_block"), ONYX_BLOCK);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "onyx_ore"), ONYX_ORE);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "peridot_block"), PERIDOT_BLOCK);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "peridot_ore"), PERIDOT_ORE);
     }
 }

@@ -16,169 +16,181 @@ public class OreGenOverworld
             .configure(new OreFeatureConfig(
                     OreFeatureConfig.Rules.BASE_STONE_OVERWORLD,
                     ModBlocks.RUBY_ORE.getDefaultState(),
-                    9)) // vein size
+                    4)) // vein size
             .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(
                     0, // bottom offset
                     0, // min y level
-                    64))) // max y level
+                    40))) // max y level
             .spreadHorizontally()
-            .repeat(20); // number of veins per chunk
+            .repeat(16); // number of veins per chunk
 
     public static ConfiguredFeature<?, ?> SAPPHIRE_ORE_GEN = Feature.ORE
             .configure(new OreFeatureConfig(
                     OreFeatureConfig.Rules.BASE_STONE_OVERWORLD,
                     ModBlocks.SAPPHIRE_ORE.getDefaultState(),
-                    9)) // vein size
+                    4)) // vein size
             .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(
                     0, // bottom offset
                     0, // min y level
-                    64))) // max y level
+                    40))) // max y level
             .spreadHorizontally()
-            .repeat(20); // number of veins per chunk
+            .repeat(16); // number of veins per chunk
 
     public static ConfiguredFeature<?, ?> AQUAMARINE_ORE_GEN = Feature.ORE
             .configure(new OreFeatureConfig(
                     OreFeatureConfig.Rules.BASE_STONE_OVERWORLD,
                     ModBlocks.AQUAMARINE_ORE.getDefaultState(),
-                    9)) // vein size
+                    4)) // vein size
             .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(
                     0, // bottom offset
                     0, // min y level
-                    64))) // max y level
+                    40))) // max y level
             .spreadHorizontally()
-            .repeat(20); // number of veins per chunk
+            .repeat(16); // number of veins per chunk
 
     public static ConfiguredFeature<?, ?> JADE_ORE_GEN = Feature.ORE
             .configure(new OreFeatureConfig(
                     OreFeatureConfig.Rules.BASE_STONE_OVERWORLD,
                     ModBlocks.JADE_ORE.getDefaultState(),
-                    9)) // vein size
+                    4)) // vein size
             .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(
                     0, // bottom offset
                     0, // min y level
-                    64))) // max y level
+                    40))) // max y level
             .spreadHorizontally()
-            .repeat(20); // number of veins per chunk
+            .repeat(16); // number of veins per chunk
 
     public static ConfiguredFeature<?, ?> OPAL_ORE_GEN = Feature.ORE
             .configure(new OreFeatureConfig(
                     OreFeatureConfig.Rules.BASE_STONE_OVERWORLD,
                     ModBlocks.OPAL_ORE.getDefaultState(),
-                    9)) // vein size
+                    4)) // vein size
             .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(
                     0, // bottom offset
                     0, // min y level
-                    64))) // max y level
+                    40))) // max y level
             .spreadHorizontally()
-            .repeat(20); // number of veins per chunk
+            .repeat(16); // number of veins per chunk
 
     public static ConfiguredFeature<?, ?> YELLOW_DIAMOND_ORE_GEN = Feature.ORE
             .configure(new OreFeatureConfig(
                     OreFeatureConfig.Rules.BASE_STONE_OVERWORLD,
                     ModBlocks.YELLOW_DIAMOND_ORE.getDefaultState(),
-                    9)) // vein size
+                    4)) // vein size
             .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(
                     0, // bottom offset
                     0, // min y level
-                    64))) // max y level
+                    40))) // max y level
             .spreadHorizontally()
-            .repeat(20); // number of veins per chunk
+            .repeat(16); // number of veins per chunk
 
     public static ConfiguredFeature<?, ?> AMBER_ORE_GEN = Feature.ORE
             .configure(new OreFeatureConfig(
                     OreFeatureConfig.Rules.BASE_STONE_OVERWORLD,
                     ModBlocks.AMBER_ORE.getDefaultState(),
-                    9)) // vein size
+                    4)) // vein size
             .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(
                     0, // bottom offset
                     0, // min y level
-                    64))) // max y level
+                    40))) // max y level
             .spreadHorizontally()
-            .repeat(20); // number of veins per chunk
+            .repeat(16); // number of veins per chunk
 
     public static ConfiguredFeature<?, ?> AMETHYST_ORE_GEN = Feature.ORE
             .configure(new OreFeatureConfig(
                     OreFeatureConfig.Rules.BASE_STONE_OVERWORLD,
                     ModBlocks.AMETHYST_ORE.getDefaultState(),
-                    9)) // vein size
+                    4)) // vein size
             .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(
                     0, // bottom offset
                     0, // min y level
-                    64))) // max y level
+                    40))) // max y level
             .spreadHorizontally()
-            .repeat(20); // number of veins per chunk
+            .repeat(16); // number of veins per chunk
 
     public static ConfiguredFeature<?, ?> TOPAZ_ORE_GEN = Feature.ORE
             .configure(new OreFeatureConfig(
                     OreFeatureConfig.Rules.BASE_STONE_OVERWORLD,
                     ModBlocks.TOPAZ_ORE.getDefaultState(),
-                    9)) // vein size
+                    4)) // vein size
             .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(
                     0, // bottom offset
                     0, // min y level
-                    64))) // max y level
+                    40))) // max y level
             .spreadHorizontally()
-            .repeat(20); // number of veins per chunk
+            .repeat(16); // number of veins per chunk
 
     public static ConfiguredFeature<?, ?> PLATINUM_ORE_GEN = Feature.ORE
             .configure(new OreFeatureConfig(
                     OreFeatureConfig.Rules.BASE_STONE_OVERWORLD,
                     ModBlocks.PLATINUM_ORE.getDefaultState(),
-                    9)) // vein size
+                    4)) // vein size
             .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(
                     0, // bottom offset
                     0, // min y level
-                    64))) // max y level
+                    40))) // max y level
             .spreadHorizontally()
-            .repeat(20); // number of veins per chunk
+            .repeat(16); // number of veins per chunk
 
     public static ConfiguredFeature<?, ?> BERYLLIUM_ORE_GEN = Feature.ORE
             .configure(new OreFeatureConfig(
                     OreFeatureConfig.Rules.BASE_STONE_OVERWORLD,
                     ModBlocks.BERYLLIUM_ORE.getDefaultState(),
-                    9)) // vein size
+                    4)) // vein size
             .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(
                     0, // bottom offset
                     0, // min y level
-                    64))) // max y level
+                    40))) // max y level
             .spreadHorizontally()
-            .repeat(20); // number of veins per chunk
+            .repeat(16); // number of veins per chunk
 
     public static ConfiguredFeature<?, ?> BIXBIT_ORE_GEN = Feature.ORE
             .configure(new OreFeatureConfig(
                     OreFeatureConfig.Rules.BASE_STONE_OVERWORLD,
                     ModBlocks.BIXBIT_ORE.getDefaultState(),
-                    9)) // vein size
+                    4)) // vein size
             .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(
                     0, // bottom offset
                     0, // min y level
-                    64))) // max y level
+                    40))) // max y level
             .spreadHorizontally()
-            .repeat(20); // number of veins per chunk
+            .repeat(16); // number of veins per chunk
 
     public static ConfiguredFeature<?, ?> MALACHITE_ORE_GEN = Feature.ORE
             .configure(new OreFeatureConfig(
                     OreFeatureConfig.Rules.BASE_STONE_OVERWORLD,
                     ModBlocks.MALACHITE_ORE.getDefaultState(),
-                    9)) // vein size
+                    4)) // vein size
             .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(
                     0, // bottom offset
                     0, // min y level
-                    64))) // max y level
+                    40))) // max y level
             .spreadHorizontally()
-            .repeat(20); // number of veins per chunk
+            .repeat(16); // number of veins per chunk
 
     public static ConfiguredFeature<?, ?> ONYX_ORE_GEN = Feature.ORE
             .configure(new OreFeatureConfig(
                     OreFeatureConfig.Rules.BASE_STONE_OVERWORLD,
                     ModBlocks.ONYX_ORE.getDefaultState(),
-                    9)) // vein size
+                    4)) // vein size
             .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(
                     0, // bottom offset
                     0, // min y level
-                    64))) // max y level
+                    40))) // max y level
             .spreadHorizontally()
-            .repeat(20); // number of veins per chunk
+            .repeat(16); // number of veins per chunk
+
+    public static ConfiguredFeature<?, ?> PERIDOT_ORE_GEN = Feature.ORE
+            .configure(new OreFeatureConfig(
+                    OreFeatureConfig.Rules.BASE_STONE_OVERWORLD,
+                    ModBlocks.PERIDOT_ORE.getDefaultState(),
+                    4)) // vein size
+            .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(
+                    0, // bottom offset
+                    0, // min y level
+                    40))) // max y level
+            .spreadHorizontally()
+            .repeat(16); // number of veins per chunk
 
     public static void registerOres()
     {
@@ -196,5 +208,6 @@ public class OreGenOverworld
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier("morejewels", "ore_bixbit_gen"), BIXBIT_ORE_GEN);
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier("morejewels", "ore_malachite_gen"), MALACHITE_ORE_GEN);
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier("morejewels", "ore_onyx_gen"), ONYX_ORE_GEN);
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier("morejewels", "ore_peridot_gen"), PERIDOT_ORE_GEN);
     }
 }

@@ -56,6 +56,9 @@ public enum ArmorMaterials implements ArmorMaterial
     }),
     ONYX("onyx", 40, new int[]{3, 6, 8, 3}, 14, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F, 0.0F, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{ModItems.ONYX});
+    }),
+    PERIDOT("peridot", 40, new int[]{3, 6, 8, 3}, 14, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F, 0.0F, () -> {
+        return Ingredient.ofItems(new ItemConvertible[]{ModItems.PERIDOT});
     });
 
     private static final int[] BASE_DURABILITY = new int[]{13, 15, 16, 11};
