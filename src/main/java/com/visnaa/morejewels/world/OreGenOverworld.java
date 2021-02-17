@@ -22,7 +22,7 @@ public class OreGenOverworld
                     0, // min y level
                     40))) // max y level
             .spreadHorizontally()
-            .repeat(16); // number of veins per chunk
+            .repeat(8); // number of veins per chunk
 
     public static ConfiguredFeature<?, ?> SAPPHIRE_ORE_GEN = Feature.ORE
             .configure(new OreFeatureConfig(
@@ -34,7 +34,7 @@ public class OreGenOverworld
                     0, // min y level
                     40))) // max y level
             .spreadHorizontally()
-            .repeat(16); // number of veins per chunk
+            .repeat(8); // number of veins per chunk
 
     public static ConfiguredFeature<?, ?> AQUAMARINE_ORE_GEN = Feature.ORE
             .configure(new OreFeatureConfig(
@@ -46,7 +46,7 @@ public class OreGenOverworld
                     0, // min y level
                     40))) // max y level
             .spreadHorizontally()
-            .repeat(16); // number of veins per chunk
+            .repeat(8); // number of veins per chunk
 
     public static ConfiguredFeature<?, ?> JADE_ORE_GEN = Feature.ORE
             .configure(new OreFeatureConfig(
@@ -58,7 +58,7 @@ public class OreGenOverworld
                     0, // min y level
                     40))) // max y level
             .spreadHorizontally()
-            .repeat(16); // number of veins per chunk
+            .repeat(8); // number of veins per chunk
 
     public static ConfiguredFeature<?, ?> OPAL_ORE_GEN = Feature.ORE
             .configure(new OreFeatureConfig(
@@ -70,7 +70,7 @@ public class OreGenOverworld
                     0, // min y level
                     40))) // max y level
             .spreadHorizontally()
-            .repeat(16); // number of veins per chunk
+            .repeat(8); // number of veins per chunk
 
     public static ConfiguredFeature<?, ?> YELLOW_DIAMOND_ORE_GEN = Feature.ORE
             .configure(new OreFeatureConfig(
@@ -82,7 +82,7 @@ public class OreGenOverworld
                     0, // min y level
                     40))) // max y level
             .spreadHorizontally()
-            .repeat(16); // number of veins per chunk
+            .repeat(8); // number of veins per chunk
 
     public static ConfiguredFeature<?, ?> AMBER_ORE_GEN = Feature.ORE
             .configure(new OreFeatureConfig(
@@ -94,7 +94,7 @@ public class OreGenOverworld
                     0, // min y level
                     40))) // max y level
             .spreadHorizontally()
-            .repeat(16); // number of veins per chunk
+            .repeat(8); // number of veins per chunk
 
     public static ConfiguredFeature<?, ?> AMETHYST_ORE_GEN = Feature.ORE
             .configure(new OreFeatureConfig(
@@ -106,7 +106,7 @@ public class OreGenOverworld
                     0, // min y level
                     40))) // max y level
             .spreadHorizontally()
-            .repeat(16); // number of veins per chunk
+            .repeat(8); // number of veins per chunk
 
     public static ConfiguredFeature<?, ?> TOPAZ_ORE_GEN = Feature.ORE
             .configure(new OreFeatureConfig(
@@ -118,7 +118,7 @@ public class OreGenOverworld
                     0, // min y level
                     40))) // max y level
             .spreadHorizontally()
-            .repeat(16); // number of veins per chunk
+            .repeat(8); // number of veins per chunk
 
     public static ConfiguredFeature<?, ?> PLATINUM_ORE_GEN = Feature.ORE
             .configure(new OreFeatureConfig(
@@ -130,7 +130,7 @@ public class OreGenOverworld
                     0, // min y level
                     40))) // max y level
             .spreadHorizontally()
-            .repeat(16); // number of veins per chunk
+            .repeat(8); // number of veins per chunk
 
     public static ConfiguredFeature<?, ?> BERYLLIUM_ORE_GEN = Feature.ORE
             .configure(new OreFeatureConfig(
@@ -142,7 +142,7 @@ public class OreGenOverworld
                     0, // min y level
                     40))) // max y level
             .spreadHorizontally()
-            .repeat(16); // number of veins per chunk
+            .repeat(8); // number of veins per chunk
 
     public static ConfiguredFeature<?, ?> BIXBIT_ORE_GEN = Feature.ORE
             .configure(new OreFeatureConfig(
@@ -154,7 +154,7 @@ public class OreGenOverworld
                     0, // min y level
                     40))) // max y level
             .spreadHorizontally()
-            .repeat(16); // number of veins per chunk
+            .repeat(8); // number of veins per chunk
 
     public static ConfiguredFeature<?, ?> MALACHITE_ORE_GEN = Feature.ORE
             .configure(new OreFeatureConfig(
@@ -166,7 +166,7 @@ public class OreGenOverworld
                     0, // min y level
                     40))) // max y level
             .spreadHorizontally()
-            .repeat(16); // number of veins per chunk
+            .repeat(8); // number of veins per chunk
 
     public static ConfiguredFeature<?, ?> ONYX_ORE_GEN = Feature.ORE
             .configure(new OreFeatureConfig(
@@ -178,7 +178,7 @@ public class OreGenOverworld
                     0, // min y level
                     40))) // max y level
             .spreadHorizontally()
-            .repeat(16); // number of veins per chunk
+            .repeat(8); // number of veins per chunk
 
     public static ConfiguredFeature<?, ?> PERIDOT_ORE_GEN = Feature.ORE
             .configure(new OreFeatureConfig(
@@ -190,7 +190,7 @@ public class OreGenOverworld
                     0, // min y level
                     40))) // max y level
             .spreadHorizontally()
-            .repeat(16); // number of veins per chunk
+            .repeat(8); // number of veins per chunk
 
     public static void registerOres()
     {
