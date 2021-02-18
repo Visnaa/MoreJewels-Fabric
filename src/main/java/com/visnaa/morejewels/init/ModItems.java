@@ -57,6 +57,10 @@ public class ModItems
     public static final Item ROUGH_ONYX = new Item(new FabricItemSettings().group(Main.ITEM_GROUP));
     public static final Item PERIDOT = new Item(new FabricItemSettings().group(Main.ITEM_GROUP));
     public static final Item ROUGH_PERIDOT = new Item(new FabricItemSettings().group(Main.ITEM_GROUP));
+    public static final Item MOON_STONE = new Item(new FabricItemSettings().group(Main.ITEM_GROUP));
+    public static final Item ROUGH_MOON_STONE = new Item(new FabricItemSettings().group(Main.ITEM_GROUP));
+    public static final Item SUN_STONE = new Item(new FabricItemSettings().group(Main.ITEM_GROUP));
+    public static final Item ROUGH_SUN_STONE = new Item(new FabricItemSettings().group(Main.ITEM_GROUP));
 
     //Block Items
     public static final BlockItem RUBY_BLOCK = new BlockItem(ModBlocks.RUBY_BLOCK, new Item.Settings().group(Main.ITEM_GROUP));
@@ -89,6 +93,10 @@ public class ModItems
     public static final BlockItem ONYX_ORE = new BlockItem(ModBlocks.ONYX_ORE, new Item.Settings().group(Main.ITEM_GROUP));
     public static final BlockItem PERIDOT_BLOCK = new BlockItem(ModBlocks.PERIDOT_BLOCK, new Item.Settings().group(Main.ITEM_GROUP));
     public static final BlockItem PERIDOT_ORE = new BlockItem(ModBlocks.PERIDOT_ORE, new Item.Settings().group(Main.ITEM_GROUP));
+    public static final BlockItem MOON_STONE_BLOCK = new BlockItem(ModBlocks.MOON_STONE_BLOCK, new Item.Settings().group(Main.ITEM_GROUP));
+    public static final BlockItem MOON_STONE_ORE = new BlockItem(ModBlocks.MOON_STONE_ORE, new Item.Settings().group(Main.ITEM_GROUP));
+    public static final BlockItem SUN_STONE_BLOCK = new BlockItem(ModBlocks.SUN_STONE_BLOCK, new Item.Settings().group(Main.ITEM_GROUP));
+    public static final BlockItem SUN_STONE_ORE = new BlockItem(ModBlocks.SUN_STONE_ORE, new Item.Settings().group(Main.ITEM_GROUP));
 
     //Tools
     public static final SwordItem RUBY_SWORD = new SwordItem(ToolMaterials.RUBY, SWORD_DAMAGE, SWORD_SPEED, new Item.Settings().group(ItemGroup.COMBAT));
@@ -181,6 +189,18 @@ public class ModItems
     public static final AxeItem PERIDOT_AXE = new AxeItem(ToolMaterials.PERIDOT, AXE_DAMAGE, AXE_SPEED, new Item.Settings().group(ItemGroup.TOOLS));
     public static final HoeItem PERIDOT_HOE = new HoeItem(ToolMaterials.PERIDOT, HOE_DAMAGE, HOE_SPEED, new Item.Settings().group(ItemGroup.TOOLS));
 
+    public static final SwordItem MOON_STONE_SWORD = new SwordItem(ToolMaterials.MOON_STONE, SWORD_DAMAGE, SWORD_SPEED, new Item.Settings().group(ItemGroup.COMBAT));
+        public static final ShovelItem MOON_STONE_SHOVEL = new ShovelItem(ToolMaterials.MOON_STONE, SHOVEL_DAMAGE, SHOVEL_SPEED, new Item.Settings().group(ItemGroup.TOOLS));
+    public static final PickaxeItem MOON_STONE_PICKAXE = new PickaxeItem(ToolMaterials.MOON_STONE, PICKAXE_DAMAGE, PICKAXE_SPEED, new Item.Settings().group(ItemGroup.TOOLS));
+    public static final AxeItem MOON_STONE_AXE = new AxeItem(ToolMaterials.MOON_STONE, AXE_DAMAGE, AXE_SPEED, new Item.Settings().group(ItemGroup.TOOLS));
+    public static final HoeItem MOON_STONE_HOE = new HoeItem(ToolMaterials.MOON_STONE, HOE_DAMAGE, HOE_SPEED, new Item.Settings().group(ItemGroup.TOOLS));
+
+    public static final SwordItem SUN_STONE_SWORD = new SwordItem(ToolMaterials.SUN_STONE, SWORD_DAMAGE, SWORD_SPEED, new Item.Settings().group(ItemGroup.COMBAT));
+    public static final ShovelItem SUN_STONE_SHOVEL = new ShovelItem(ToolMaterials.SUN_STONE, SHOVEL_DAMAGE, SHOVEL_SPEED, new Item.Settings().group(ItemGroup.TOOLS));
+    public static final PickaxeItem SUN_STONE_PICKAXE = new PickaxeItem(ToolMaterials.SUN_STONE, PICKAXE_DAMAGE, PICKAXE_SPEED, new Item.Settings().group(ItemGroup.TOOLS));
+    public static final AxeItem SUN_STONE_AXE = new AxeItem(ToolMaterials.SUN_STONE, AXE_DAMAGE, AXE_SPEED, new Item.Settings().group(ItemGroup.TOOLS));
+    public static final HoeItem SUN_STONE_HOE = new HoeItem(ToolMaterials.SUN_STONE, HOE_DAMAGE, HOE_SPEED, new Item.Settings().group(ItemGroup.TOOLS));
+
     //Armor
     public static final ArmorItem RUBY_HELMET = new ArmorItem(ArmorMaterials.RUBY, EquipmentSlot.HEAD, new Item.Settings().group(ItemGroup.COMBAT));
     public static final ArmorItem RUBY_CHESTPLATE = new ArmorItem(ArmorMaterials.RUBY, EquipmentSlot.CHEST, new Item.Settings().group(ItemGroup.COMBAT));
@@ -257,6 +277,16 @@ public class ModItems
     public static final ArmorItem PERIDOT_LEGGINGS = new ArmorItem(ArmorMaterials.PERIDOT, EquipmentSlot.LEGS, new Item.Settings().group(ItemGroup.COMBAT));
     public static final ArmorItem PERIDOT_BOOTS = new ArmorItem(ArmorMaterials.PERIDOT, EquipmentSlot.FEET, new Item.Settings().group(ItemGroup.COMBAT));
 
+    public static final ArmorItem MOON_STONE_HELMET = new ArmorItem(ArmorMaterials.MOON_STONE, EquipmentSlot.HEAD, new Item.Settings().group(ItemGroup.COMBAT));
+    public static final ArmorItem MOON_STONE_CHESTPLATE = new ArmorItem(ArmorMaterials.MOON_STONE, EquipmentSlot.CHEST, new Item.Settings().group(ItemGroup.COMBAT));
+    public static final ArmorItem MOON_STONE_LEGGINGS = new ArmorItem(ArmorMaterials.MOON_STONE, EquipmentSlot.LEGS, new Item.Settings().group(ItemGroup.COMBAT));
+    public static final ArmorItem MOON_STONE_BOOTS = new ArmorItem(ArmorMaterials.MOON_STONE, EquipmentSlot.FEET, new Item.Settings().group(ItemGroup.COMBAT));
+
+    public static final ArmorItem SUN_STONE_HELMET = new ArmorItem(ArmorMaterials.SUN_STONE, EquipmentSlot.HEAD, new Item.Settings().group(ItemGroup.COMBAT));
+    public static final ArmorItem SUN_STONE_CHESTPLATE = new ArmorItem(ArmorMaterials.SUN_STONE, EquipmentSlot.CHEST, new Item.Settings().group(ItemGroup.COMBAT));
+    public static final ArmorItem SUN_STONE_LEGGINGS = new ArmorItem(ArmorMaterials.SUN_STONE, EquipmentSlot.LEGS, new Item.Settings().group(ItemGroup.COMBAT));
+    public static final ArmorItem SUN_STONE_BOOTS = new ArmorItem(ArmorMaterials.SUN_STONE, EquipmentSlot.FEET, new Item.Settings().group(ItemGroup.COMBAT));
+
     public static void registerItems()
     {
         //Items
@@ -290,6 +320,10 @@ public class ModItems
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "rough_onyx"), ROUGH_ONYX);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "peridot"), PERIDOT);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "rough_peridot"), ROUGH_PERIDOT);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "moon_stone"), MOON_STONE);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "rough_moon_stone"), ROUGH_MOON_STONE);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "sun_stone"), SUN_STONE);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "rough_sun_stone"), ROUGH_SUN_STONE);
 
         //Tools
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "ruby_sword"), RUBY_SWORD);
@@ -382,6 +416,18 @@ public class ModItems
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "peridot_axe"), PERIDOT_AXE);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "peridot_hoe"), PERIDOT_HOE);
 
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "moon_stone_sword"), MOON_STONE_SWORD);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "moon_stone_shovel"), MOON_STONE_SHOVEL);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "moon_stone_pickaxe"), MOON_STONE_PICKAXE);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "moon_stone_axe"), MOON_STONE_AXE);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "moon_stone_hoe"), MOON_STONE_HOE);
+
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "sun_stone_sword"), SUN_STONE_SWORD);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "sun_stone_shovel"), SUN_STONE_SHOVEL);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "sun_stone_pickaxe"), SUN_STONE_PICKAXE);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "sun_stone_axe"), SUN_STONE_AXE);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "sun_stone_hoe"), SUN_STONE_HOE);
+
         //Armor
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "ruby_helmet"), RUBY_HELMET);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "ruby_chestplate"), RUBY_CHESTPLATE);
@@ -457,6 +503,16 @@ public class ModItems
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "peridot_chestplate"), PERIDOT_CHESTPLATE);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "peridot_leggings"), PERIDOT_LEGGINGS);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "peridot_boots"), PERIDOT_BOOTS);
+
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "moon_stone_helmet"), MOON_STONE_HELMET);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "moon_stone_chestplate"), MOON_STONE_CHESTPLATE);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "moon_stone_leggings"), MOON_STONE_LEGGINGS);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "moon_stone_boots"), MOON_STONE_BOOTS);
+
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "sun_stone_helmet"), SUN_STONE_HELMET);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "sun_stone_chestplate"), SUN_STONE_CHESTPLATE);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "sun_stone_leggings"), SUN_STONE_LEGGINGS);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "sun_stone_boots"), SUN_STONE_BOOTS);
         
         //Block Items
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "ruby_block"), RUBY_BLOCK);
@@ -489,5 +545,9 @@ public class ModItems
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "onyx_ore"), ONYX_ORE);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "peridot_block"), PERIDOT_BLOCK);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "peridot_ore"), PERIDOT_ORE);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "moon_stone_block"), MOON_STONE_BLOCK);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "moon_stone_ore"), MOON_STONE_ORE);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "sun_stone_block"), SUN_STONE_BLOCK);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "sun_stone_ore"), SUN_STONE_ORE);
     }
 }

@@ -192,6 +192,30 @@ public class OreGenOverworld
             .spreadHorizontally()
             .repeat(8); // number of veins per chunk
 
+    public static ConfiguredFeature<?, ?> MOON_STONE_ORE_GEN = Feature.ORE
+            .configure(new OreFeatureConfig(
+                    OreFeatureConfig.Rules.BASE_STONE_OVERWORLD,
+                    ModBlocks.MOON_STONE_ORE.getDefaultState(),
+                    4)) // vein size
+            .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(
+                    0, // bottom offset
+                    0, // min y level
+                    40))) // max y level
+            .spreadHorizontally()
+            .repeat(8); // number of veins per chunk
+
+    public static ConfiguredFeature<?, ?> SUN_STONE_ORE_GEN = Feature.ORE
+            .configure(new OreFeatureConfig(
+                    OreFeatureConfig.Rules.BASE_STONE_OVERWORLD,
+                    ModBlocks.SUN_STONE_ORE.getDefaultState(),
+                    4)) // vein size
+            .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(
+                    0, // bottom offset
+                    0, // min y level
+                    40))) // max y level
+            .spreadHorizontally()
+            .repeat(10); // number of veins per chunk
+
     public static void registerOres()
     {
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier("morejewels", "ore_ruby_gen"), RUBY_ORE_GEN);
@@ -209,5 +233,7 @@ public class OreGenOverworld
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier("morejewels", "ore_malachite_gen"), MALACHITE_ORE_GEN);
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier("morejewels", "ore_onyx_gen"), ONYX_ORE_GEN);
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier("morejewels", "ore_peridot_gen"), PERIDOT_ORE_GEN);
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier("morejewels", "ore_moon_stone_gen"), MOON_STONE_ORE_GEN);
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier("morejewels", "ore_sun_stone_gen"), SUN_STONE_ORE_GEN);
     }
 }

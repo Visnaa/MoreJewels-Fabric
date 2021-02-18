@@ -54,6 +54,12 @@ public enum ToolMaterials implements ToolMaterial
     }),
     PERIDOT(3, 2048, 9.0F, 3.0F, 14, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{ModItems.PERIDOT});
+    }),
+    MOON_STONE(3, 2048, 9.0F, 3.0F, 14, () -> {
+        return Ingredient.ofItems(new ItemConvertible[]{ModItems.MOON_STONE});
+    }),
+    SUN_STONE(3, 2048, 9.0F, 3.0F, 14, () -> {
+        return Ingredient.ofItems(new ItemConvertible[]{ModItems.SUN_STONE});
     });
 
     private final int miningLevel;
