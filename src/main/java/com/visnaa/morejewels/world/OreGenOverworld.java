@@ -216,6 +216,18 @@ public class OreGenOverworld
             .spreadHorizontally()
             .repeat(10); // number of veins per chunk
 
+    public static ConfiguredFeature<?, ?> CITRINE_ORE_GEN = Feature.ORE
+            .configure(new OreFeatureConfig(
+                    OreFeatureConfig.Rules.BASE_STONE_OVERWORLD,
+                    ModBlocks.CITRINE_ORE.getDefaultState(),
+                    4)) // vein size
+            .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(
+                    0, // bottom offset
+                    0, // min y level
+                    40))) // max y level
+            .spreadHorizontally()
+            .repeat(10); // number of veins per chunk
+
     public static void registerOres()
     {
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier("morejewels", "ore_ruby_gen"), RUBY_ORE_GEN);
@@ -235,5 +247,6 @@ public class OreGenOverworld
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier("morejewels", "ore_peridot_gen"), PERIDOT_ORE_GEN);
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier("morejewels", "ore_moon_stone_gen"), MOON_STONE_ORE_GEN);
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier("morejewels", "ore_sun_stone_gen"), SUN_STONE_ORE_GEN);
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier("morejewels", "ore_citrine_gen"), CITRINE_ORE_GEN);
     }
 }

@@ -65,6 +65,9 @@ public enum ArmorMaterials implements ArmorMaterial
     }),
     SUN_STONE("sun_stone", 40, new int[]{3, 6, 8, 3}, 14, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F, 0.0F, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{ModItems.SUN_STONE});
+    }),
+    CITRINE("citrine", 40, new int[]{3, 6, 8, 3}, 14, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F, 0.0F, () -> {
+        return Ingredient.ofItems(new ItemConvertible[]{ModItems.CITRINE});
     });
 
     private static final int[] BASE_DURABILITY = new int[]{13, 15, 16, 11};

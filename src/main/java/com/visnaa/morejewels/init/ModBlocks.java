@@ -43,6 +43,8 @@ public class ModBlocks
     public static final Block MOON_STONE_ORE = new Block(FabricBlockSettings.of(Material.STONE).strength(3.0F, 3.0F));
     public static final Block SUN_STONE_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).strength(5.0F, 6.0F));
     public static final Block SUN_STONE_ORE = new Block(FabricBlockSettings.of(Material.STONE).strength(3.0F, 3.0F));
+    public static final Block CITRINE_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).strength(5.0F, 6.0F));
+    public static final Block CITRINE_ORE = new Block(FabricBlockSettings.of(Material.STONE).strength(3.0F, 3.0F));
 
 
     public static void registerBlocks()
@@ -81,5 +83,7 @@ public class ModBlocks
         Registry.register(Registry.BLOCK, new Identifier(Main.MOD_ID, "moon_stone_ore"), MOON_STONE_ORE);
         Registry.register(Registry.BLOCK, new Identifier(Main.MOD_ID, "sun_stone_block"), SUN_STONE_BLOCK);
         Registry.register(Registry.BLOCK, new Identifier(Main.MOD_ID, "sun_stone_ore"), SUN_STONE_ORE);
+        Registry.register(Registry.BLOCK, new Identifier(Main.MOD_ID, "citrine_block"), CITRINE_BLOCK);
+        Registry.register(Registry.BLOCK, new Identifier(Main.MOD_ID, "citrine_ore"), CITRINE_ORE);
     }
 }

@@ -31,5 +31,6 @@ public class OreGenMixin
         builder.feature(GenerationStep.Feature.UNDERGROUND_ORES, OreGenOverworld.PERIDOT_ORE_GEN);
         builder.feature(GenerationStep.Feature.UNDERGROUND_ORES, OreGenOverworld.MOON_STONE_ORE_GEN);
         builder.feature(GenerationStep.Feature.UNDERGROUND_ORES, OreGenOverworld.SUN_STONE_ORE_GEN);
+        builder.feature(GenerationStep.Feature.UNDERGROUND_ORES, OreGenOverworld.CITRINE_ORE_GEN);
     }
 }

@@ -60,6 +60,9 @@ public enum ToolMaterials implements ToolMaterial
     }),
     SUN_STONE(3, 2048, 9.0F, 3.0F, 14, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{ModItems.SUN_STONE});
+    }),
+    CITRINE(3, 2048, 9.0F, 3.0F, 14, () -> {
+        return Ingredient.ofItems(new ItemConvertible[]{ModItems.CITRINE});
     });
 
     private final int miningLevel;
